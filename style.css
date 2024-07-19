@@ -1,15 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #ffbb00;
+
+  --primary-font: "Rubik", sans-serif;
+}
+
 .top_fixed {
   width: 100%;
   height: 25px;
-  background-color: #ffbb00;
-  font-weight: 500;
-  font-size: 20px;
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,9 +58,14 @@
 .content__nav_bar .links__nav_bar .link__navigation {
   list-style: none;
   text-decoration: none;
-  color: #ffbb00;
-  font-weight: 700;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
   font-size: 1.12rem;
+}
+
+.content__nav_bar .links__nav_bar .link__navigation:hover {
+  filter: invert(0.5);
 }
 
 .btn__carrinho {
@@ -67,7 +81,7 @@
 
 .btn__carrinho .icone {
   font-size: 28px;
-  color: #ffbb00;
+  color: var(--primary-color);
 }
 
 .btn__carrinho .icone:hover {
@@ -83,6 +97,7 @@
   border-radius: 50%;
   background-color: #f44336;
   color: #f1f1f1;
+  font-family: var(--primary-font);
   font-size: 14px;
   text-align: center;
   line-height: 18px;
@@ -98,20 +113,25 @@
   background-position: center;
 }
 
+/* CAMPO PRA ATERDA DE SITE EM DESENVOLVIMENTO */
 .alert {
-    width: 100%;
-    height: 55.8vh;
-    background: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 55.8vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .alert i {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
-.alert i, h1, p {
-    color: rgba(255, 0, 0, 0.74);
+.alert i,
+h1,
+p {
+  color: rgba(255, 0, 0, 0.74);
 }
+
+/* --------------------------------------------------------- */
