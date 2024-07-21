@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brutos Burguer</title>
     <link rel="shortcut icon" href="images/favicon-b.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body> 
@@ -38,10 +38,40 @@
         <!-- imagem de capa da brutos burguer -->
     </section>
 
-    <section class="alert">
+    <!-- <section class="alert">
         <i class="bi bi-exclamation-octagon"></i>
         <h1>Site em desenvolvimento</h1>
         <p>Página não disponivel no momento.</p>
+    </section> -->
+
+    <section class="nav__bar_cardapio">
+        <nav class="nav__options">
+            <ul class="nav__bar_menu">
+                <li class="nav__options_itens"><a class="options_link">Burguer</a></li>
+                <li class="nav__options_itens"><a class="options_link">Combos</a></li>
+                <li class="nav__options_itens"><a class="options_link">Porções</a></li>
+                <li class="nav__options_itens"><a class="options_link">Bebidas</a></li>
+            </ul>
+        </nav>
     </section>
+
+    <main>
+        <div class="card__produto">
+
+            <figure>
+                <img src="images/teste-burguer.jpg" alt="burguer" />
+            </figure>
+
+            <div class="card__produto_detalhes">
+                <h4>Brutos burguer</h4>
+                <h5>Pao de hamburguer, burguer 120g, onion rings, bacon, maionese.</h5>
+            </div>
+
+            <h6>R$ 29,00</h6>
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
