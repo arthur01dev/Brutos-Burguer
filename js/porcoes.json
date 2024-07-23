@@ -1,0 +1,45 @@
+[
+    {
+      "id": 13,
+      "image": "images/porcoes-teste.jpg",
+      "porcao_name": "Onion Rings",
+      "porcao_description": "400g de onion rings crocantes",
+      "price": 15.00
+    },
+    {
+      "id": 14,
+      "image": "images/porcoes-teste.jpg",
+      "porcao_name": "Onion Rings",
+      "porcao_description": "400g de onion rings crocantes",
+      "price": 15.00
+    },
+    {
+      "id": 15,
+      "image": "images/porcoes-teste.jpg",
+      "porcao_name": "Onion Rings",
+      "porcao_description": "400g de onion rings crocantes",
+      "price": 15.00
+    },
+    {
+      "id": 16,
+      "image": "images/porcoes-teste.jpg",
+      "porcao_name": "Onion Rings",
+      "porcao_description": "400g de onion rings crocantes",
+      "price": 15.00
+    },
+    {
+      "id": 17,
+      "image": "images/porcoes-teste.jpg",
+      "porcao_name": "Onion Rings",
+      "porcao_description": "400g de onion rings crocantes",
+      "price": 15.00
+    },
+    {
+      "id": 18,
+      "image": "images/porcoes-teste.jpg",
+      "porcao_name": "Onion Rings",
+      "porcao_description": "400g de onion rings crocantes",
+      "price": 15.00
+    }
+   
+  ]

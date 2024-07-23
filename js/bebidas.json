@@ -1,0 +1,44 @@
+[
+    {
+        "id": 7,
+        "image": "images/coca-lata-310.jpg",
+        "bebida_name": "Coca cola",
+        "bebida_description": "Lata 310ml",
+        "price": 6.00
+    },
+    {
+        "id": 8,
+        "image": "images/coca-lata-310.jpg",
+        "bebida_name": "Coca cola",
+        "bebida_description": "Lata 310ml",
+        "price": 6.00
+    },
+    {
+        "id": 9,
+        "image": "images/coca-lata-310.jpg",
+        "bebida_name": "Coca cola",
+        "bebida_description": "Lata 310ml",
+        "price": 6.00
+    },
+    {
+        "id": 10,
+        "image": "images/coca-lata-310.jpg",
+        "bebida_name": "Coca cola",
+        "bebida_description": "Lata 310ml",
+        "price": 6.00
+    },
+    {
+        "id": 11,
+        "image": "images/coca-lata-310.jpg",
+        "bebida_name": "Coca cola",
+        "bebida_description": "Lata 310ml",
+        "price": 6.00
+    },
+    {
+        "id": 12,
+        "image": "images/coca-lata-310.jpg",
+        "bebida_name": "Coca cola",
+        "bebida_description": "Lata 310ml",
+        "price": 6.00
+    }
+]

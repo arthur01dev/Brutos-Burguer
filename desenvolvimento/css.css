@@ -18,7 +18,7 @@
   height: 25px;
   background-color: var(--primary-color);
   font-family: var(--primary-font);
-  font-weight: 500;
+  font-weight: 300;
   font-size: 17px;
   display: flex;
   align-items: center;
@@ -182,8 +182,7 @@ main {
 }
 
 .lista__burguers,
-.lista__bebidas,
-.lista__porcoes {
+.lista__bebidas {
   width: 100%;
   height: 100%;
   display: flex;
@@ -194,23 +193,20 @@ main {
 }
 
 .lista__burguers.oculta,
-.lista__bebidas.oculta,
-.card__porcoes.oculta {
+.lista__bebidas.oculta {
   display: none;
 }
 
 .lista__burguers,
-.lista__bebidas,
-.card__porcoes {
+.lista__bebidas {
   margin-block: 32px;
   gap: 32px;
 }
 
 .card__burguer,
-.card__bebida,
-.card__porcoes {
+.card__bebida {
   width: 336px;
-  height: 396px;
+  height: 376px;
   padding: 20px;
   border-radius: 8px;
   flex-basis: 336px;
@@ -222,42 +218,30 @@ main {
   gap: 15px;
 }
 
-/* Define a class for all product images */
-.img__burguer, .img__bebida, .img__porcoes {
-  width: 100%; /* Ajuste a largura conforme necessário */
-  height: 150px; /* Ajuste a altura conforme necessário */
-  object-fit: cover; /* Mantém a proporção e corta o excesso se necessário */
+.img__burguer,
+.img__bebida {
   border-radius: 8px;
 }
 
-/* Opcional: Estilização dos cards */
-.card__burguer, .card__bebida, .card__porcoes{
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  text-align: center;
-}
-
-/* Estilização das descrições dos produtos */
-.card__produto_detalhes h4, .card__produto_detalhes h5, .card__produto_detalhes h6 {
-  margin: 8px 0;
+.card__produto_detalhes h4,
+.card__bebida_detalhes h4 {
   font-family: var(--primary-font);
-}
-
-.card__produto_detalhes h4 {
+  font-weight: 700;
   font-size: 20px;
-  font-weight: 700;
 }
 
-.card__produto_detalhes h5 {
-  font-size: 16px;
+.card__produto_detalhes h5,
+.card__bebida_detalhes h5 {
+  font-family: var(--primary-font);
   font-weight: 400;
+  font-size: 16px;
 }
 
-.card__produto_detalhes h6 {
+.card__burguer h6,
+.card__bebida_detalhes h6 {
+  font-family: var(--primary-font);
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 700;
 }
 
 .btn__order {
