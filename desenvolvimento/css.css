@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffbb00;
+  --black-color: #000;
+
+  --primary-font: "Rubik", sans-serif;
+}
+
+.top_fixed {
+  width: 100%;
+  height: 25px;
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+.header {
+  background: var(--black-color);
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 8px 0px #757575;
+  position: fixed;
+  top: 25px;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav_bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content__nav_bar {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.content__nav_bar .links__nav_bar .link__navigation {
+  list-style: none;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.12rem;
+}
+
+.content__nav_bar .links__nav_bar .link__navigation:hover {
+  filter: invert(0.5);
+}
+
+.btn__carrinho {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+}
+
+.btn__carrinho span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn__carrinho .icone {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.btn__carrinho .icone:hover {
+  filter: invert(0.5);
+}
+
+.btn__carrinho .numero_itens {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #f44336;
+  color: #f1f1f1;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.hero {
+  margin-top: 90px;
+  width: 100%;
+  height: 320px;
+  background-image: url("/images/capa-principal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("/images/fundo-brutos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav__bar_cardapio {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+}
+
+.nav__options {
+  width: 100%;
+}
+
+.nav__bar_menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav__options_itens {
+  display: inline-block;
+}
+
+.options_link {
+  display: block;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.options_link:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 735px) {
+  .nav__options {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .nav__bar_menu {
+    display: inline-block;
+  }
+
+  .nav__options_itens {
+    display: inline-block;
+  }
+
+  .options_link {
+    white-space: nowrap;
+  }
+}
+
+.lista__burguers,
+.lista__bebidas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.lista__burguers.oculta,
+.lista__bebidas.oculta {
+  display: none;
+}
+
+.lista__burguers,
+.lista__bebidas {
+  margin-block: 32px;
+  gap: 32px;
+}
+
+.card__burguer,
+.card__bebida {
+  width: 336px;
+  height: 376px;
+  padding: 20px;
+  border-radius: 8px;
+  flex-basis: 336px;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.img__burguer,
+.img__bebida {
+  border-radius: 8px;
+}
+
+.card__produto_detalhes h4,
+.card__bebida_detalhes h4 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card__produto_detalhes h5,
+.card__bebida_detalhes h5 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.card__burguer h6,
+.card__bebida_detalhes h6 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn__order {
+  background: var(--black-color);
+  color: var(--primary-color);
+  width: 190px;
+  padding: 10px 0px;
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.btn__order:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 735px) {
+  .card__burguer,
+  .card__bebida {
+    width: 95%;
+  }
+}
+
+.oculta {
+  display: none;
+}
