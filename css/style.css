@@ -103,11 +103,12 @@
   line-height: 18px;
 }
 
-.hero {
+.hero, .hero__img{
   margin-top: 90px;
   width: 100%;
-  height: 320px;
-  background-image: url("/images/capa-principal.png");
+  height: 330px;
+  background-image: url("images-css/capa-principal-brutos-burguer.svg");
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -120,8 +121,8 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("/images/fundo-brutos.png");
-  background-repeat: no-repeat;
+  background-image: url("images-css/fundo-brutos-transparente.svg");
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
 }
@@ -237,6 +238,11 @@ main {
   padding: 16px;
   margin: 16px;
   text-align: center;
+}
+
+.porcoes-section {
+  margin-top: 32px; /* Ajuste este valor conforme necessário */
+  margin-bottom: 32px; /* Ajuste este valor conforme necessário */
 }
 
 /* Estilização das descrições dos produtos */
