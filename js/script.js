@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h6>${formatCurrency(product.price)}</h6>
         </div>
         
-        <button class="btn__order">Peça já <i class="bi bi-hand-index-thumb"></i></button>
+        <button class="btn__order">Add ao Carrinho <i class="bi bi-hand-index-thumb"></i></button>
       `;
     return card;
   }
